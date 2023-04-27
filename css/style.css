@@ -1,0 +1,1253 @@
+/* styles généraux
+--------------------
+--------------------
+*/
+:root {
+  --primary: #ff0000;
+}
+:root {
+  --secondary: #000000;
+}
+:root {
+  --third: white;
+}
+:root {
+  --fourth: gray;
+}
+:root {
+  --font_01: Montserrat;
+}
+:root {
+  --font_02: "help me";
+}
+@font-face {
+  src: url(../font/HelpMe-owODB.ttf) format("truetype");
+  font-family: "help me";
+}
+* {
+  box-sizing: border-box;
+}
+* {
+  outline: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 10750px;
+  margin: 0;
+  overflow-x: hidden;
+}
+/*styles textes:
+  --------------------
+  --------------------
+  */
+.texte-1 {
+  position: absolute;
+  left: 25%;
+  top: 85%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--third);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem black, 0 0 5.5rem black, 0 0 6rem black, 0 0 9.5rem black;
+}
+.texte-2 {
+  position: absolute;
+  left: 25%;
+  top: 90%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--third);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem black, 0 0 5.5rem black, 0 0 6rem black, 0 0 9.5rem black;
+}
+.texte-3 {
+  position: absolute;
+  left: 17%;
+  top: 10%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--third);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem black, 0 0 5.5rem black, 0 0 6rem black, 0 0 9.5rem black;
+}
+.texte-4 {
+  position: absolute;
+  left: 17%;
+  top: 15%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--third);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem black, 0 0 5.5rem black, 0 0 6rem black, 0 0 9.5rem black;
+}
+.texte-5 {
+  position: absolute;
+  left: 17%;
+  top: 20%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--third);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem black, 0 0 5.5rem black, 0 0 6rem black, 0 0 9.5rem black;
+}
+.texte-6 {
+  position: absolute;
+  left: 30%;
+  top: 12%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--third);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem black, 0 0 5.5rem black, 0 0 6rem black, 0 0 9.5rem black;
+}
+.texte-7 {
+  position: absolute;
+  left: 35%;
+  top: 80%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--third);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem black, 0 0 5.5rem black, 0 0 6rem black, 0 0 9.5rem black;
+}
+.texte-8 {
+  position: absolute;
+  left: 15%;
+  top: 85%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--third);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem black, 0 0 5.5rem black, 0 0 6rem black, 0 0 9.5rem black;
+}
+.texte-9 {
+  position: absolute;
+  left: 35%;
+  top: 80%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--third);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem black, 0 0 5.5rem black, 0 0 6rem black, 0 0 9.5rem black;
+}
+.texte-10 {
+  position: absolute;
+  left: 15%;
+  top: 85%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--third);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem black, 0 0 5.5rem black, 0 0 6rem black, 0 0 9.5rem black;
+}
+.texte-11 {
+  position: absolute;
+  left: 35%;
+  top: 65%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--third);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem black, 0 0 5.5rem black, 0 0 6rem black, 0 0 9.5rem black;
+}
+.texte-12 {
+  position: absolute;
+  left: 35%;
+  top: 80%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--third);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem black, 0 0 5.5rem black, 0 0 6rem black, 0 0 9.5rem black;
+}
+.texte-13 {
+  position: absolute;
+  left: 35%;
+  top: 80%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--secondary);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem white, 0 0 5.5rem white, 0 0 6rem white, 0 0 9.5rem white;
+}
+.texte-14 {
+  position: absolute;
+  left: 35%;
+  top: 80%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--secondary);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem white, 0 0 5.5rem white, 0 0 6rem white, 0 0 9.5rem white;
+}
+.texte-15 {
+  position: absolute;
+  left: 35%;
+  top: 80%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--secondary);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem white, 0 0 5.5rem white, 0 0 6rem white, 0 0 9.5rem white;
+}
+.texte-16 {
+  position: absolute;
+  left: 35%;
+  top: 80%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--secondary);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem white, 0 0 5.5rem white, 0 0 6rem white, 0 0 9.5rem white;
+}
+/*styles sections:
+  --------------------
+  --------------------
+  */
+header {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url(../img/img_arriere_plan/sinister_wallpaper.png);
+  background-position: center;
+  background-size: 100vw 100vh;
+}
+.titre {
+  margin-top: 50px;
+  font-family: var(--font_02);
+  color: var(--third);
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 0 0 0.5rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem red, 0 0 5.5rem red, 0 0 6rem red, 0 0 9.5rem red;
+}
+.description {
+  position: absolute;
+  top: -1%;
+  margin-left: 8px;
+  margin-top: 17px;
+  font-size: 0.6vw;
+  font-weight: bolder;
+  font-family: var(--font_01);
+  color: var(--third);
+}
+#arrow {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  font-size: 2.5vw;
+  color: var(--primary);
+  text-shadow: 0 0 0.5rem white, 0 0 1rem white, 0 0 1.5rem white,
+    0 0 2.5rem red, 0 0 4rem red, 0 0 5.5rem red, 0 0 6rem red, 0 0 9.5rem red;
+}
+section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+/*styles section:02
+  --------------------
+  --------------------
+  */
+#no2 {
+  background-image: url(../img/img_arriere_plan/sinister_hostels.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.is-scrolling #no2 .fille {
+  animation-play-state: running;
+}
+#julia {
+  position: absolute;
+  width: 15vw;
+  aspect-ratio: 1/1;
+  background-image: url(../img/img_personnages/julia.png);
+  background-size: 4800% 100%;
+  z-index: 1;
+  margin: 0 auto;
+  animation-name: marche;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+@keyframes marche {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -4800% 0;
+  }
+}
+#marie {
+  position: absolute;
+  left: 400px;
+  width: 15vw;
+  aspect-ratio: 1/1;
+  background-image: url(../img/img_personnages/marie.png);
+  background-size: 2700% 100%;
+  z-index: 1;
+  margin: 0 auto;
+  animation-name: marche2;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(27);
+}
+@keyframes marche2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -2700% 0;
+  }
+}
+#ligne {
+  position: absolute;
+  top: 500px;
+  left: 500px;
+  width: 10vw;
+}
+#ligne_02 {
+  position: absolute;
+  top: 500px;
+  left: 700px;
+  width: 10vw;
+}
+#ligne_03 {
+  position: absolute;
+  top: 500px;
+  left: 900px;
+  width: 10vw;
+}
+#feuille {
+  position: absolute;
+  left: 20vw;
+  top: 55vh;
+  width: 1vw;
+}
+#feuille1 {
+  position: absolute;
+  left: 18vw;
+  top: 58vh;
+  width: 1.1vw;
+}
+#feuille2 {
+  position: absolute;
+  left: 20vw;
+  top: 62vh;
+  width: 1.4vw;
+}
+#feuille3 {
+  position: absolute;
+  left: 17vw;
+  top: 65vh;
+  width: 1.7vw;
+}
+#feuille4 {
+  position: absolute;
+  left: 20vw;
+  top: 70vh;
+  width: 2vw;
+}
+#feuille5 {
+  position: absolute;
+  left: 15vw;
+  top: 75vh;
+  width: 2.3vw;
+}
+#feuille6 {
+  position: absolute;
+  left: 20vw;
+  top: 80vh;
+  width: 2.6vw;
+}
+#feuille7 {
+  position: absolute;
+  left: 16vw;
+  top: 85vh;
+  width: 2.9vw;
+}
+/*styles section:04
+  --------------------
+  --------------------
+  */
+#no3 {
+  background-image: url(../img/img_arriere_plan/scene_03_.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+.is-scrolling #no3 .monstre {
+  animation-play-state: running;
+}
+#monstre {
+  position: absolute;
+  top: 60%;
+  left: 3%;
+  width: 17vw;
+  opacity: 0;
+  aspect-ratio: 1/1;
+  background-image: url(../img/img_personnages/monstre.png);
+  background-size: 4800% 100%;
+  z-index: 1;
+  margin: 0 auto;
+  animation-name: marche3;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+@keyframes marche3 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -4800% 0;
+  }
+}
+#monstre1 {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  width: 17vw;
+  opacity: 0;
+  aspect-ratio: 1/1;
+  background-image: url(../img/img_personnages/monstre.png);
+  background-size: 4800% 100%;
+  z-index: 1;
+  margin: 0 auto;
+  animation-name: marche3;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+@keyframes marche3 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -4800% 0;
+  }
+}
+#monstre2 {
+  position: absolute;
+  top: 25%;
+  left: 65%;
+  width: 17vw;
+  opacity: 0;
+  aspect-ratio: 1/1;
+  background-image: url(../img/img_personnages/monstre.png);
+  background-size: 4800% 100%;
+  z-index: 1;
+  margin: 0 auto;
+  animation-name: marche3;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+@keyframes marche3 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -4800% 0;
+  }
+}
+/*styles section:05
+  --------------------
+  --------------------
+  */
+#no4 {
+  background-image: url(../img/img_arriere_plan/salle_attente.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+.is-scrolling #no4 .fille-02 {
+  animation-play-state: running;
+}
+#julia2 {
+  position: absolute;
+  width: 15vw;
+  aspect-ratio: 1/1;
+  background-image: url(../img/img_personnages/julia.png);
+  background-size: 4800% 100%;
+  z-index: 1;
+  margin: 0 auto;
+  animation-name: marche4;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+@keyframes marche4 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -4800% 0;
+  }
+}
+#marie2 {
+  position: absolute;
+  left: 400px;
+  width: 15vw;
+  aspect-ratio: 1/1;
+  background-image: url(../img/img_personnages/marie.png);
+  background-size: 2700% 100%;
+  z-index: 1;
+  margin: 0 auto;
+  animation-name: marche5;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(27);
+}
+@keyframes marche5 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -2700% 0;
+  }
+}
+#petit_s {
+  position: absolute;
+  left: 10vw;
+  top: 50vh;
+}
+#petit_c {
+  position: absolute;
+  left: 12vw;
+  top: 50vh;
+}
+#petit_r {
+  position: absolute;
+  left: 14vw;
+  top: 50vh;
+}
+#petit_i {
+  position: absolute;
+  left: 16vw;
+  top: 50vh;
+}
+#petit_i_02 {
+  position: absolute;
+  left: 17vw;
+  top: 50vh;
+}
+#petit_i_03 {
+  position: absolute;
+  left: 18vw;
+  top: 50vh;
+}
+#petit_point {
+  position: absolute;
+  left: 19vw;
+  top: 53vh;
+}
+#petit_point_02 {
+  position: absolute;
+  left: 20vw;
+  top: 53vh;
+}
+#petit_point_exclamation {
+  position: absolute;
+  left: 21vw;
+  top: 50vh;
+}
+#moyen_s {
+  position: absolute;
+  left: 27.5vw;
+  top: 47.5vh;
+}
+#moyen_c {
+  position: absolute;
+  left: 30.5vw;
+  top: 47.5vh;
+}
+#moyen_r {
+  position: absolute;
+  left: 33.5vw;
+  top: 47.5vh;
+}
+#moyen_i {
+  position: absolute;
+  left: 36.8vw;
+  top: 47.5vh;
+}
+#moyen_i_02 {
+  position: absolute;
+  left: 38.3vw;
+  top: 47.5vh;
+}
+#moyen_i_03 {
+  position: absolute;
+  left: 39.8vw;
+  top: 47.5vh;
+}
+#moyen_point {
+  position: absolute;
+  left: 41.3vw;
+  top: 52vh;
+}
+#moyen_point_02 {
+  position: absolute;
+  left: 42.3vw;
+  top: 52vh;
+}
+#moyen_point_exclamation {
+  position: absolute;
+  left: 43.5vw;
+  top: 47vh;
+}
+#grand_s {
+  position: absolute;
+  left: 50vw;
+  top: 43.5vh;
+}
+#grand_c {
+  position: absolute;
+  left: 54.5vw;
+  top: 44vh;
+}
+#grand_r {
+  position: absolute;
+  left: 59vw;
+  top: 44vh;
+}
+#grand_i {
+  position: absolute;
+  left: 64vw;
+  top: 43.5vh;
+}
+#grand_i_02 {
+  position: absolute;
+  left: 66vw;
+  top: 43.5vh;
+}
+#grand_i_03 {
+  position: absolute;
+  left: 68vw;
+  top: 43.5vh;
+}
+#grand_point {
+  position: absolute;
+  left: 70vw;
+  top: 50.8vh;
+}
+#grand_point_02 {
+  position: absolute;
+  left: 72vw;
+  top: 50.8vh;
+}
+#grand_point_exclamation {
+  position: absolute;
+  left: 74vw;
+  top: 43.2vh;
+}
+#sang_01 {
+  position: absolute;
+  left: 380px;
+}
+#sang_02 {
+  position: absolute;
+  left: 450px;
+}
+#sang_03 {
+  position: absolute;
+  left: 380px;
+}
+#sang_04 {
+  position: absolute;
+  left: 450px;
+}
+/*styles section:06
+  --------------------
+  --------------------
+  */
+#no5 {
+  background-image: url(../img/img_arriere_plan/scene_06.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+.is-scrolling #no5 .fille-03 {
+  animation-play-state: running;
+}
+#julia3 {
+  position: absolute;
+  width: 15vw;
+  aspect-ratio: 1/1;
+  background-image: url(../img/img_personnages/julia.png);
+  background-size: 4800% 100%;
+  z-index: 1;
+  border: solid red 3px;
+  margin: 0 auto;
+  animation-name: marche6;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+@keyframes marche6 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -4800% 0;
+  }
+}
+#sang_05 {
+  position: absolute;
+  left: 380px;
+  border: solid purple 3px;
+}
+#sang_06 {
+  position: absolute;
+  left: 450px;
+  border: solid brown 3px;
+}
+#sang_07 {
+  position: absolute;
+  left: 380px;
+  border: solid purple 3px;
+}
+#sang_08 {
+  position: absolute;
+  left: 450px;
+  border: solid brown 3px;
+}
+#sang_09 {
+  position: absolute;
+  left: 380px;
+  border: solid purple 3px;
+}
+#sang_10 {
+  position: absolute;
+  left: 450px;
+  border: solid brown 3px;
+}
+#sang_11 {
+  position: absolute;
+  left: 380px;
+  border: solid purple 3px;
+}
+#sang_12 {
+  position: absolute;
+  left: 450px;
+  border: solid brown 3px;
+}
+/*styles section:07
+  --------------------
+  --------------------
+  */
+#no6 {
+  background-image: url(../img/img_arriere_plan/scene_05.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+.is-scrolling #no6 .fille-04 {
+  animation-play-state: running;
+}
+#julia4 {
+  position: absolute;
+  width: 15vw;
+  aspect-ratio: 1/1;
+  background-image: url(../img/img_personnages/julia.png);
+  background-size: 4800% 100%;
+  z-index: 1;
+  border: solid red 3px;
+  margin: 0 auto;
+  animation-name: marche7;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+@keyframes marche7 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -4800% 0;
+  }
+}
+#cercle_01 {
+  position: absolute;
+  left: 88.5vw;
+  top: 5vh;
+}
+#cercle_02 {
+  position: absolute;
+  left: 94.5vw;
+  top: 8.5vh;
+}
+#cercle_03 {
+  position: absolute;
+  left: 88.3vw;
+  top: 24vh;
+}
+#cercle_04 {
+  position: absolute;
+  left: 85.5vw;
+  top: 8.5vh;
+}
+/*styles sections:08
+  --------------------
+  --------------------
+  */
+#no7 {
+  background-image: url(../img/img_arriere_plan/scene_06.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+.is-scrolling #no7 .fille-05 {
+  animation-play-state: running;
+}
+#julia5 {
+  position: absolute;
+  width: 15vw;
+  aspect-ratio: 1/1;
+  background-image: url(../img/img_personnages/julia.png);
+  background-size: 4800% 100%;
+  z-index: 1;
+  border: solid red 3px;
+  margin: 0 auto;
+  animation-name: marche8;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+@keyframes marche8 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -4800% 0;
+  }
+}
+#sang_13 {
+  position: absolute;
+  left: 380px;
+  border: solid purple 3px;
+}
+#sang_14 {
+  position: absolute;
+  left: 450px;
+  border: solid brown 3px;
+}
+#sang_15 {
+  position: absolute;
+  left: 380px;
+  border: solid purple 3px;
+}
+#sang_16 {
+  position: absolute;
+  left: 450px;
+  border: solid brown 3px;
+}
+#sang_17 {
+  position: absolute;
+  left: 380px;
+  border: solid purple 3px;
+}
+#sang_18 {
+  position: absolute;
+  left: 450px;
+  border: solid brown 3px;
+}
+#sang_19 {
+  position: absolute;
+  left: 380px;
+  border: solid purple 3px;
+}
+#sang_20 {
+  position: absolute;
+  left: 450px;
+  border: solid brown 3px;
+}
+/*styles section:09
+  --------------------
+  --------------------
+  */
+#no8 {
+  background-image: url(../img/img_arriere_plan/scene_05.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+.is-scrolling #no8 .fille-06 {
+  animation-play-state: running;
+}
+#julia6 {
+  position: absolute;
+  width: 15vw;
+  aspect-ratio: 1/1;
+  background-image: url(../img/img_personnages/julia.png);
+  background-size: 4800% 100%;
+  z-index: 1;
+  border: solid red 3px;
+  margin: 0 auto;
+  animation-name: marche9;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+@keyframes marche9 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -4800% 0;
+  }
+}
+#cercle_05 {
+  position: absolute;
+  left: 88.5vw;
+  top: 5vh;
+}
+#cercle_06 {
+  position: absolute;
+  left: 94.5vw;
+  top: 8.5vh;
+}
+#cercle_07 {
+  position: absolute;
+  left: 88.3vw;
+  top: 24vh;
+}
+#cercle_08 {
+  position: absolute;
+  left: 85.5vw;
+  top: 8.5vh;
+}
+/*styles section:10
+  --------------------
+  --------------------
+  */
+#no9 {
+  background-image: url(../img/img_arriere_plan/scene_06.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+.is-scrolling #no9 .fille-07 {
+  animation-play-state: running;
+}
+#julia7 {
+  position: absolute;
+  width: 15vw;
+  aspect-ratio: 1/1;
+  background-image: url(../img/img_personnages/julia.png);
+  background-size: 4800% 100%;
+  z-index: 1;
+  border: solid red 3px;
+  margin: 0 auto;
+  animation-name: marche10;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+@keyframes marche10 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -4800% 0;
+  }
+}
+/*styles section:10
+  --------------------
+  --------------------
+  */
+#no10 {
+  background-image: url(../img/img_arriere_plan/salle_attente.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+.is-scrolling #no10 .fille-08 {
+  animation-play-state: running;
+}
+#julia8 {
+  position: absolute;
+  width: 15vw;
+  aspect-ratio: 1/1;
+  background-image: url(../img/img_personnages/julia.png);
+  background-size: 4800% 100%;
+  z-index: 1;
+  border: solid red 3px;
+  margin: 0 auto;
+  animation-name: marche11;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+@keyframes marche11 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -4800% 0;
+  }
+}
+.is-scrolling #no10 .monstre-02 {
+  animation-play-state: running;
+}
+#monstre3 {
+  position: absolute;
+  width: 15vw;
+  aspect-ratio: 1/1;
+  background-image: url(../img/img_personnages/monstre.png);
+  background-size: 4800% 100%;
+  z-index: 1;
+  border: solid red 3px;
+  margin: 0 auto;
+  animation-name: marche12;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+@keyframes marche12 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -4800% 0;
+  }
+}
+/*styles sections:11
+  --------------------
+  --------------------
+  */
+#no11 {
+  background-size: 100vw 100vh;
+}
+.is-scrolling #no11 .monstre-03 {
+  animation-play-state: running;
+}
+#monstre4 {
+  position: absolute;
+  width: 15vw;
+  aspect-ratio: 1/1;
+  background-image: url(../img/img_personnages/monstre.png);
+  background-size: 4800% 100%;
+  z-index: 1;
+  border: solid red 3px;
+  margin: 0 auto;
+  animation-name: marche13;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+@keyframes marche13 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -4800% 0;
+  }
+}
+.is-scrolling #no11 .marie-02 {
+  animation-play-state: running;
+}
+#marie3 {
+  position: absolute;
+  width: 15vw;
+  aspect-ratio: 1/1;
+  background-image: url(../img/img_personnages/marie.png);
+  background-size: 2700% 100%;
+  z-index: 1;
+  border: solid red 3px;
+  margin: 0 auto;
+  animation-name: marche14;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(27);
+}
+@keyframes marche14 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -2700% 0;
+  }
+}
+#monstre5 {
+  position: absolute;
+  width: 15vw;
+  aspect-ratio: 1/1;
+  background-image: url(../img/img_personnages/monstre.png);
+  background-size: 4800% 100%;
+  z-index: 1;
+  border: solid red 3px;
+  margin: 0 auto;
+  animation-name: marche15;
+  animation-duration: 1.5s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(48);
+}
+@keyframes marche15 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -4800% 0;
+  }
+}
+#mur_gauche {
+  position: absolute;
+  left: 50px;
+  border: solid red 3px;
+}
+#mur_droit {
+  position: absolute;
+  left: 300px;
+  border: solid blue 3px;
+}
+#escalier {
+  position: absolute;
+  left: 50px;
+  width: 2.9vw;
+  border: solid red 3px;
+}
+#escalier_02 {
+  position: absolute;
+  left: 50px;
+  width: 2.9vw;
+  border: solid red 3px;
+}
+#escalier_03 {
+  position: absolute;
+  left: 50px;
+  width: 2.9vw;
+  border: solid red 3px;
+}
+#escalier_04 {
+  position: absolute;
+  left: 50px;
+  width: 2.9vw;
+  border: solid red 3px;
+}
+#escalier_05 {
+  position: absolute;
+  left: 50px;
+  width: 2.9vw;
+  border: solid red 3px;
+}
+#escalier_06 {
+  position: absolute;
+  left: 50px;
+  width: 2.9vw;
+  border: solid red 3px;
+}
+#escalier_07 {
+  position: absolute;
+  left: 50px;
+  width: 2.9vw;
+  border: solid red 3px;
+}
+#escalier_08 {
+  position: absolute;
+  left: 50px;
+  width: 2.9vw;
+  border: solid red 3px;
+}
+#escalier_09 {
+  position: absolute;
+  left: 50px;
+  width: 2.9vw;
+  border: solid red 3px;
+}

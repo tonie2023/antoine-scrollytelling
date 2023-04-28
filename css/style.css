@@ -135,13 +135,13 @@ body {
 }
 .texte-7 {
   position: absolute;
-  left: 59vw;
-  top: 39vh;
+  left: 58.8vw;
+  top: 39.5vh;
   width: 54vw;
   height: 5vh;
   font-family: var(--font_01);
   font-weight: 800;
-  font-size: 30px;
+  font-size: 1.2vw;
   margin: 0;
   padding: 0;
   color: var(--third);
@@ -150,13 +150,13 @@ body {
 }
 .texte-8 {
   position: absolute;
-  left: 15%;
-  top: 85%;
+  left: 52.5vw;
+  top: 48.5vh;
   width: 54vw;
   height: 5vh;
   font-family: var(--font_01);
   font-weight: 800;
-  font-size: 30px;
+  font-size: 1.2vw;
   margin: 0;
   padding: 0;
   color: var(--third);
@@ -165,13 +165,13 @@ body {
 }
 .texte-9 {
   position: absolute;
-  left: 35%;
-  top: 80%;
+  left: 55.8vw;
+  top: 64.4vh;
   width: 54vw;
   height: 5vh;
   font-family: var(--font_01);
   font-weight: 800;
-  font-size: 30px;
+  font-size: 1.2vw;
   margin: 0;
   padding: 0;
   color: var(--third);
@@ -786,6 +786,8 @@ section {
 }
 #julia3 {
   position: absolute;
+  top: 68.5vh;
+  left: 52.5vw;
   width: 15vw;
   aspect-ratio: 1/1;
   background-image: url(../img/img_personnages/julia.png);
@@ -808,21 +810,27 @@ section {
 }
 #ligne {
   position: absolute;
-  top: 500px;
-  left: 500px;
-  width: 10vw;
+  top: 43.5vh;
+  left: 58vw;
+  width: 5.9vw;
+  margin: 0;
+  padding: 0;
 }
 #ligne_02 {
   position: absolute;
-  top: 500px;
-  left: 700px;
-  width: 10vw;
+  top: 52.5vh;
+  left: 52vw;
+  width: 17.5vw;
+  margin: 0;
+  padding: 0;
 }
 #ligne_03 {
   position: absolute;
-  top: 500px;
-  left: 900px;
-  width: 10vw;
+  top: 68.5vh;
+  left: 55.4vw;
+  width: 10.5vw;
+  margin: 0;
+  padding: 0;
 }
 #sang_05 {
   position: absolute;
@@ -981,7 +989,6 @@ section {
 }
 #sang_16 {
   position: absolute;
-  left: 450px;
   width: 12vw;
   left: 15vw;
   top: 80vh;

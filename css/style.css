@@ -45,8 +45,8 @@ body {
 */
 .texte-1 {
   position: absolute;
-  left: 25%;
-  top: 83%;
+  left: 33vw;
+  top: 83vh;
   width: 54vw;
   height: 5vh;
   font-family: var(--font_01);
@@ -60,8 +60,8 @@ body {
 }
 .texte-2 {
   position: absolute;
-  left: 25%;
-  top: 90%;
+  left: 33vw;
+  top: 90vh;
   width: 54vw;
   height: 5vh;
   font-family: var(--font_01);
@@ -135,8 +135,8 @@ body {
 }
 .texte-7 {
   position: absolute;
-  left: 35%;
-  top: 80%;
+  left: 59vw;
+  top: 39vh;
   width: 54vw;
   height: 5vh;
   font-family: var(--font_01);
@@ -283,6 +283,36 @@ body {
   text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
     0 0 4rem white, 0 0 5.5rem white, 0 0 6rem white, 0 0 9.5rem white;
 }
+.texte-17 {
+  position: absolute;
+  left: 35%;
+  top: 80%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--secondary);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem white, 0 0 5.5rem white, 0 0 6rem white, 0 0 9.5rem white;
+}
+.texte-18 {
+  position: absolute;
+  left: 35%;
+  top: 80%;
+  width: 54vw;
+  height: 5vh;
+  font-family: var(--font_01);
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: var(--secondary);
+  text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
+    0 0 4rem white, 0 0 5.5rem white, 0 0 6rem white, 0 0 9.5rem white;
+}
 /*styles sections:
 --------------------
 --------------------
@@ -390,24 +420,6 @@ section {
   to {
     background-position: -2700% 0;
   }
-}
-#ligne {
-  position: absolute;
-  top: 500px;
-  left: 500px;
-  width: 10vw;
-}
-#ligne_02 {
-  position: absolute;
-  top: 500px;
-  left: 700px;
-  width: 10vw;
-}
-#ligne_03 {
-  position: absolute;
-  top: 500px;
-  left: 900px;
-  width: 10vw;
 }
 #feuille {
   position: absolute;
@@ -738,21 +750,27 @@ section {
 }
 #sang_01 {
   position: absolute;
-  left: 30vw;
-  top: 50vh;
-  border: dotted red 4px;
+  width: 12vw;
+  left: 65vw;
+  top: 80vh;
 }
 #sang_02 {
   position: absolute;
-  left: 450px;
+  width: 12vw;
+  left: 65vw;
+  top: 80vh;
 }
 #sang_03 {
   position: absolute;
-  left: 380px;
+  width: 12vw;
+  left: 65vw;
+  top: 80vh;
 }
 #sang_04 {
   position: absolute;
-  left: 450px;
+  width: 12vw;
+  left: 65vw;
+  top: 80vh;
 }
 /*styles section:06
 --------------------
@@ -788,37 +806,71 @@ section {
     background-position: -4800% 0;
   }
 }
+#ligne {
+  position: absolute;
+  top: 500px;
+  left: 500px;
+  width: 10vw;
+}
+#ligne_02 {
+  position: absolute;
+  top: 500px;
+  left: 700px;
+  width: 10vw;
+}
+#ligne_03 {
+  position: absolute;
+  top: 500px;
+  left: 900px;
+  width: 10vw;
+}
 #sang_05 {
   position: absolute;
-  left: 380px;
+  width: 12vw;
+  left: 15vw;
+  top: 80vh;
 }
 #sang_06 {
   position: absolute;
-  left: 450px;
+  width: 12vw;
+  left: 15vw;
+  top: 80vh;
 }
 #sang_07 {
   position: absolute;
-  left: 380px;
+  width: 12vw;
+  left: 15vw;
+  top: 80vh;
 }
 #sang_08 {
   position: absolute;
-  left: 450px;
+  width: 12vw;
+  left: 15vw;
+  top: 80vh;
 }
 #sang_09 {
   position: absolute;
-  left: 380px;
+  width: 12vw;
+  left: 15vw;
+  top: 80vh;
 }
 #sang_10 {
   position: absolute;
-  left: 450px;
+  width: 12vw;
+  left: 15vw;
+  top: 80vh;
 }
 #sang_11 {
   position: absolute;
-  left: 380px;
+  width: 12vw;
+  left: 15vw;
+  top: 80vh;
 }
 #sang_12 {
   position: absolute;
-  left: 450px;
+  width: 12vw;
+  left: 15vw;
+  top: 80vh;
 }
 /*styles section:07
 --------------------
@@ -911,35 +963,52 @@ section {
 }
 #sang_13 {
   position: absolute;
-  left: 380px;
+  width: 12vw;
+  left: 15vw;
+  top: 80vh;
 }
 #sang_14 {
   position: absolute;
-  left: 450px;
+  width: 12vw;
+  left: 15vw;
+  top: 80vh;
 }
 #sang_15 {
   position: absolute;
-  left: 380px;
+  width: 12vw;
+  left: 15vw;
+  top: 80vh;
 }
 #sang_16 {
   position: absolute;
   left: 450px;
+  width: 12vw;
+  left: 15vw;
+  top: 80vh;
 }
 #sang_17 {
   position: absolute;
-  left: 380px;
+  width: 12vw;
+  left: 15vw;
+  top: 80vh;
 }
 #sang_18 {
   position: absolute;
-  left: 450px;
+  width: 12vw;
+  left: 15vw;
+  top: 80vh;
 }
 #sang_19 {
   position: absolute;
-  left: 380px;
+  width: 12vw;
+  left: 15vw;
+  top: 80vh;
 }
 #sang_20 {
   position: absolute;
-  left: 450px;
+  width: 12vw;
+  left: 15vw;
+  top: 80vh;
 }
 /*styles section:09
 --------------------

@@ -10,13 +10,13 @@ header.addEventListener("pointerleave", function () {
 });
 
 const body = document.querySelector("body");
-bodyClass = document.body;
+let isScrolling;
 
 window.addEventListener("scroll", function () {
-  bodyClass.classList.add("is-scrolling");
-
-  const timer = setTimeout(function () {
-    bodyClass.classList.remove("is-scrolling");
+  body.classList.add("is-scrolling");
+  window.clearTimeout(isScrolling);
+  isScrolling = setTimeout(function () {
+    body.classList.remove("is-scrolling");
   }, 100);
 });
 
@@ -35,7 +35,7 @@ const texteUn = gsap.timeline();
 
 texteUn
   .from(".texte-1", 1.8, {
-    x: -820,
+    x: -850,
     ease: "bounce.out",
     delay: 1,
     stagger: {

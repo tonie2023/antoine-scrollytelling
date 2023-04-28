@@ -42,9 +42,13 @@ texteUn
       amount: 0.3,
     },
   })
-  .to(".texte-1", {
-    opacity: 1,
-  });
+  .to(
+    ".texte-1",
+    {
+      opacity: 0,
+    },
+    6
+  );
 const texteAnim = gsap.timeline();
 
 texteAnim
@@ -56,9 +60,13 @@ texteAnim
       amount: 0.3,
     },
   })
-  .to(".texte-2", {
-    opacity: 1,
-  });
+  .to(
+    ".texte-2",
+    {
+      opacity: 0,
+    },
+    7
+  );
 /*Javascript feuilles:
 ----------------------
 ----------------------
@@ -214,7 +222,7 @@ lettreAnim
       y: "-700",
       opacity: 0,
       rotation: 150,
-      duration: "3",
+      duration: "3.5",
       skewX: "5deg",
       skewY: "100deg",
     },
@@ -227,7 +235,7 @@ lettreAnim
       y: "300",
       opacity: 0,
       rotation: 150,
-      duration: "3.5",
+      duration: "4.5",
       skewX: "5deg",
       skewY: "100deg",
     },

@@ -40,13 +40,13 @@ body {
   overflow-x: hidden;
 }
 /*styles textes:
-  --------------------
-  --------------------
-  */
+--------------------
+--------------------
+*/
 .texte-1 {
   position: absolute;
   left: 25%;
-  top: 85%;
+  top: 83%;
   width: 54vw;
   height: 5vh;
   font-family: var(--font_01);
@@ -75,8 +75,8 @@ body {
 }
 .texte-3 {
   position: absolute;
-  left: 17%;
-  top: 10%;
+  left: 17vw;
+  top: 10vh;
   width: 54vw;
   height: 5vh;
   font-family: var(--font_01);
@@ -90,8 +90,8 @@ body {
 }
 .texte-4 {
   position: absolute;
-  left: 17%;
-  top: 15%;
+  left: 17vw;
+  top: 16.7vh;
   width: 54vw;
   height: 5vh;
   font-family: var(--font_01);
@@ -105,8 +105,8 @@ body {
 }
 .texte-5 {
   position: absolute;
-  left: 17%;
-  top: 20%;
+  left: 17vw;
+  top: 23.5vh;
   width: 54vw;
   height: 5vh;
   font-family: var(--font_01);
@@ -284,9 +284,9 @@ body {
     0 0 4rem white, 0 0 5.5rem white, 0 0 6rem white, 0 0 9.5rem white;
 }
 /*styles sections:
-  --------------------
-  --------------------
-  */
+--------------------
+--------------------
+*/
 header {
   position: absolute;
   width: 100vw;
@@ -331,9 +331,9 @@ section {
   margin: 0;
 }
 /*styles section:02
-  --------------------
-  --------------------
-  */
+--------------------
+--------------------
+*/
 #no2 {
   background-image: url(../img/img_arriere_plan/sinister_hostels.jpg);
   background-size: 100vw 100vh;
@@ -345,6 +345,8 @@ section {
 }
 #julia {
   position: absolute;
+  top: 70vh;
+  left: 12vw;
   width: 15vw;
   aspect-ratio: 1/1;
   background-image: url(../img/img_personnages/julia.png);
@@ -367,8 +369,9 @@ section {
 }
 #marie {
   position: absolute;
-  left: 400px;
-  width: 15vw;
+  left: 18vw;
+  top: 72vh;
+  width: 13vw;
   aspect-ratio: 1/1;
   background-image: url(../img/img_personnages/marie.png);
   background-size: 2700% 100%;
@@ -455,9 +458,9 @@ section {
   width: 2.9vw;
 }
 /*styles section:04
-  --------------------
-  --------------------
-  */
+--------------------
+--------------------
+*/
 #no3 {
   background-image: url(../img/img_arriere_plan/scene_03_.jpg);
   background-repeat: no-repeat;
@@ -542,9 +545,9 @@ section {
   }
 }
 /*styles section:05
-  --------------------
-  --------------------
-  */
+--------------------
+--------------------
+*/
 #no4 {
   background-image: url(../img/img_arriere_plan/salle_attente.jpg);
   background-repeat: no-repeat;
@@ -735,7 +738,9 @@ section {
 }
 #sang_01 {
   position: absolute;
-  left: 380px;
+  left: 30vw;
+  top: 50vh;
+  border: dotted red 4px;
 }
 #sang_02 {
   position: absolute;
@@ -750,9 +755,9 @@ section {
   left: 450px;
 }
 /*styles section:06
-  --------------------
-  --------------------
-  */
+--------------------
+--------------------
+*/
 #no5 {
   background-image: url(../img/img_arriere_plan/scene_06.jpg);
   background-repeat: no-repeat;
@@ -768,7 +773,6 @@ section {
   background-image: url(../img/img_personnages/julia.png);
   background-size: 4800% 100%;
   z-index: 1;
-  border: solid red 3px;
   margin: 0 auto;
   animation-name: marche6;
   animation-duration: 1.5s;
@@ -787,47 +791,39 @@ section {
 #sang_05 {
   position: absolute;
   left: 380px;
-  border: solid purple 3px;
 }
 #sang_06 {
   position: absolute;
   left: 450px;
-  border: solid brown 3px;
 }
 #sang_07 {
   position: absolute;
   left: 380px;
-  border: solid purple 3px;
 }
 #sang_08 {
   position: absolute;
   left: 450px;
-  border: solid brown 3px;
 }
 #sang_09 {
   position: absolute;
   left: 380px;
-  border: solid purple 3px;
 }
 #sang_10 {
   position: absolute;
   left: 450px;
-  border: solid brown 3px;
 }
 #sang_11 {
   position: absolute;
   left: 380px;
-  border: solid purple 3px;
 }
 #sang_12 {
   position: absolute;
   left: 450px;
-  border: solid brown 3px;
 }
 /*styles section:07
-  --------------------
-  --------------------
-  */
+--------------------
+--------------------
+*/
 #no6 {
   background-image: url(../img/img_arriere_plan/scene_05.jpg);
   background-repeat: no-repeat;
@@ -843,7 +839,6 @@ section {
   background-image: url(../img/img_personnages/julia.png);
   background-size: 4800% 100%;
   z-index: 1;
-  border: solid red 3px;
   margin: 0 auto;
   animation-name: marche7;
   animation-duration: 1.5s;
@@ -880,9 +875,9 @@ section {
   top: 8.5vh;
 }
 /*styles sections:08
-  --------------------
-  --------------------
-  */
+--------------------
+--------------------
+*/
 #no7 {
   background-image: url(../img/img_arriere_plan/scene_06.jpg);
   background-repeat: no-repeat;
@@ -898,7 +893,7 @@ section {
   background-image: url(../img/img_personnages/julia.png);
   background-size: 4800% 100%;
   z-index: 1;
-  border: solid red 3px;
+
   margin: 0 auto;
   animation-name: marche8;
   animation-duration: 1.5s;
@@ -917,47 +912,39 @@ section {
 #sang_13 {
   position: absolute;
   left: 380px;
-  border: solid purple 3px;
 }
 #sang_14 {
   position: absolute;
   left: 450px;
-  border: solid brown 3px;
 }
 #sang_15 {
   position: absolute;
   left: 380px;
-  border: solid purple 3px;
 }
 #sang_16 {
   position: absolute;
   left: 450px;
-  border: solid brown 3px;
 }
 #sang_17 {
   position: absolute;
   left: 380px;
-  border: solid purple 3px;
 }
 #sang_18 {
   position: absolute;
   left: 450px;
-  border: solid brown 3px;
 }
 #sang_19 {
   position: absolute;
   left: 380px;
-  border: solid purple 3px;
 }
 #sang_20 {
   position: absolute;
   left: 450px;
-  border: solid brown 3px;
 }
 /*styles section:09
-  --------------------
-  --------------------
-  */
+--------------------
+--------------------
+*/
 #no8 {
   background-image: url(../img/img_arriere_plan/scene_05.jpg);
   background-repeat: no-repeat;
@@ -973,7 +960,7 @@ section {
   background-image: url(../img/img_personnages/julia.png);
   background-size: 4800% 100%;
   z-index: 1;
-  border: solid red 3px;
+
   margin: 0 auto;
   animation-name: marche9;
   animation-duration: 1.5s;
@@ -1010,9 +997,9 @@ section {
   top: 8.5vh;
 }
 /*styles section:10
-  --------------------
-  --------------------
-  */
+--------------------
+--------------------
+*/
 #no9 {
   background-image: url(../img/img_arriere_plan/scene_06.jpg);
   background-repeat: no-repeat;
@@ -1028,7 +1015,7 @@ section {
   background-image: url(../img/img_personnages/julia.png);
   background-size: 4800% 100%;
   z-index: 1;
-  border: solid red 3px;
+
   margin: 0 auto;
   animation-name: marche10;
   animation-duration: 1.5s;
@@ -1045,9 +1032,9 @@ section {
   }
 }
 /*styles section:10
-  --------------------
-  --------------------
-  */
+--------------------
+--------------------
+*/
 #no10 {
   background-image: url(../img/img_arriere_plan/salle_attente.jpg);
   background-repeat: no-repeat;
@@ -1063,7 +1050,7 @@ section {
   background-image: url(../img/img_personnages/julia.png);
   background-size: 4800% 100%;
   z-index: 1;
-  border: solid red 3px;
+
   margin: 0 auto;
   animation-name: marche11;
   animation-duration: 1.5s;
@@ -1089,7 +1076,7 @@ section {
   background-image: url(../img/img_personnages/monstre.png);
   background-size: 4800% 100%;
   z-index: 1;
-  border: solid red 3px;
+
   margin: 0 auto;
   animation-name: marche12;
   animation-duration: 1.5s;
@@ -1106,9 +1093,9 @@ section {
   }
 }
 /*styles sections:11
-  --------------------
-  --------------------
-  */
+--------------------
+--------------------
+*/
 #no11 {
   background-size: 100vw 100vh;
 }
@@ -1122,7 +1109,7 @@ section {
   background-image: url(../img/img_personnages/monstre.png);
   background-size: 4800% 100%;
   z-index: 1;
-  border: solid red 3px;
+
   margin: 0 auto;
   animation-name: marche13;
   animation-duration: 1.5s;
@@ -1148,7 +1135,7 @@ section {
   background-image: url(../img/img_personnages/marie.png);
   background-size: 2700% 100%;
   z-index: 1;
-  border: solid red 3px;
+
   margin: 0 auto;
   animation-name: marche14;
   animation-duration: 1.5s;
@@ -1171,7 +1158,7 @@ section {
   background-image: url(../img/img_personnages/monstre.png);
   background-size: 4800% 100%;
   z-index: 1;
-  border: solid red 3px;
+
   margin: 0 auto;
   animation-name: marche15;
   animation-duration: 1.5s;
@@ -1190,64 +1177,53 @@ section {
 #mur_gauche {
   position: absolute;
   left: 50px;
-  border: solid red 3px;
 }
 #mur_droit {
   position: absolute;
   left: 300px;
-  border: solid blue 3px;
 }
 #escalier {
   position: absolute;
   left: 50px;
   width: 2.9vw;
-  border: solid red 3px;
 }
 #escalier_02 {
   position: absolute;
   left: 50px;
   width: 2.9vw;
-  border: solid red 3px;
 }
 #escalier_03 {
   position: absolute;
   left: 50px;
   width: 2.9vw;
-  border: solid red 3px;
 }
 #escalier_04 {
   position: absolute;
   left: 50px;
   width: 2.9vw;
-  border: solid red 3px;
 }
 #escalier_05 {
   position: absolute;
   left: 50px;
   width: 2.9vw;
-  border: solid red 3px;
 }
 #escalier_06 {
   position: absolute;
   left: 50px;
   width: 2.9vw;
-  border: solid red 3px;
 }
 #escalier_07 {
   position: absolute;
   left: 50px;
   width: 2.9vw;
-  border: solid red 3px;
 }
 #escalier_08 {
   position: absolute;
   left: 50px;
   width: 2.9vw;
-  border: solid red 3px;
 }
 #escalier_09 {
   position: absolute;
   left: 50px;
   width: 2.9vw;
-  border: solid red 3px;
 }

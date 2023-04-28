@@ -564,13 +564,16 @@ section {
   background-image: url(../img/img_arriere_plan/salle_attente.jpg);
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
+  z-index: 0;
 }
 .is-scrolling #no4 .fille-02 {
   animation-play-state: running;
 }
 #julia2 {
   position: absolute;
-  width: 15vw;
+  top: 57vh;
+  left: 52vw;
+  width: 21.5vw;
   aspect-ratio: 1/1;
   background-image: url(../img/img_personnages/julia.png);
   background-size: 4800% 100%;
@@ -581,6 +584,7 @@ section {
   animation-play-state: paused;
   animation-iteration-count: infinite;
   animation-timing-function: steps(48);
+  z-index: 2;
 }
 @keyframes marche4 {
   from {
@@ -592,8 +596,10 @@ section {
 }
 #marie2 {
   position: absolute;
-  left: 400px;
-  width: 15vw;
+  top: 57vh;
+  left: 70vw;
+  width: 20.5vw;
+  transform: scaleX(-1);
   aspect-ratio: 1/1;
   background-image: url(../img/img_personnages/marie.png);
   background-size: 2700% 100%;
@@ -789,6 +795,7 @@ section {
   top: 68.5vh;
   left: 52.5vw;
   width: 15vw;
+  transform: scaleX(-1);
   aspect-ratio: 1/1;
   background-image: url(../img/img_personnages/julia.png);
   background-size: 4800% 100%;
@@ -942,18 +949,22 @@ section {
   background-image: url(../img/img_arriere_plan/scene_06.jpg);
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
+  z-index: 0;
 }
 .is-scrolling #no7 .fille-05 {
   animation-play-state: running;
 }
 #julia5 {
   position: absolute;
-  width: 15vw;
+  top: 58vh;
+  left: 47vw;
+  width: 21.5vw;
+  z-index: 1;
   aspect-ratio: 1/1;
   background-image: url(../img/img_personnages/julia.png);
   background-size: 4800% 100%;
   z-index: 1;
-
+  transform: scaleX(-1);
   margin: 0 auto;
   animation-name: marche8;
   animation-duration: 1.5s;
@@ -1031,12 +1042,13 @@ section {
 }
 #julia6 {
   position: absolute;
-  width: 15vw;
+  top: 35vh;
+  left: 15vw;
+  width: 21.5vw;
   aspect-ratio: 1/1;
   background-image: url(../img/img_personnages/julia.png);
   background-size: 4800% 100%;
   z-index: 1;
-
   margin: 0 auto;
   animation-name: marche9;
   animation-duration: 1.5s;
@@ -1086,12 +1098,14 @@ section {
 }
 #julia7 {
   position: absolute;
-  width: 15vw;
+  top: 29vh;
+  left: 45vw;
+  width: 21.5vw;
   aspect-ratio: 1/1;
   background-image: url(../img/img_personnages/julia.png);
   background-size: 4800% 100%;
   z-index: 1;
-
+  transform: scaleX(-1);
   margin: 0 auto;
   animation-name: marche10;
   animation-duration: 1.5s;
@@ -1126,7 +1140,7 @@ section {
   background-image: url(../img/img_personnages/julia.png);
   background-size: 4800% 100%;
   z-index: 1;
-
+  transform: scaleX(-1);
   margin: 0 auto;
   animation-name: marche11;
   animation-duration: 1.5s;
@@ -1147,12 +1161,14 @@ section {
 }
 #monstre3 {
   position: absolute;
-  width: 15vw;
+  left: 31vw;
+  top: 54.5vh;
+  width: 5.5vw;
   aspect-ratio: 1/1;
   background-image: url(../img/img_personnages/monstre.png);
   background-size: 4800% 100%;
   z-index: 1;
-
+  transform: skewX(-10deg);
   margin: 0 auto;
   animation-name: marche12;
   animation-duration: 1.5s;

@@ -6,3 +6,15 @@
 
 - Antoine Dion <br>
 - Pierre-Luc Proulx <br>
+
+## Développement web: <br>
+
+- Antoine Dion <br>
+
+## Technologies: <br>
+
+- HTML <br>
+- CSS <br>
+- Javascript <br>
+- **[Librairie d'animation GSAP](https://greensock.com/)**<br>
+- **[Plugiciel ScrollTrigger](https://greensock.com/docs/v3/Plugins/ScrollTrigger)**<br>

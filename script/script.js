@@ -501,7 +501,7 @@ gsap
     skewY: "8deg",
   });
 
-let audio = new Audio("sons/darkness_tension.wav");
+let audio = new Audio("sons/darkness_tension.mp3");
 let header = document.querySelector("#no1");
 header.addEventListener("pointerenter", function () {
   audio.play();

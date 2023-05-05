@@ -75,8 +75,8 @@ body {
 }
 .texte-3 {
   position: absolute;
-  left: 17vw;
-  top: 10vh;
+  left: 30.5vw;
+  top: 8vh;
   width: 54vw;
   height: 5vh;
   font-family: var(--font_01);
@@ -90,8 +90,8 @@ body {
 }
 .texte-4 {
   position: absolute;
-  left: 17vw;
-  top: 16.7vh;
+  left: 43vw;
+  top: 14.7vh;
   width: 54vw;
   height: 5vh;
   font-family: var(--font_01);
@@ -105,8 +105,8 @@ body {
 }
 .texte-5 {
   position: absolute;
-  left: 17vw;
-  top: 23.5vh;
+  left: 38.5vw;
+  top: 21.5vh;
   width: 54vw;
   height: 5vh;
   font-family: var(--font_01);
@@ -359,6 +359,27 @@ section {
   width: 100vw;
   height: 100vh;
   margin: 0;
+  border: solid 1px red;
+}
+ul.technique-gsap {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 10px;
+  font-family: monospace;
+  font-weight: 400;
+  width: auto;
+  display: inline-block;
+  padding: 10px 20px 12px 20px;
+  margin: 0;
+  max-width: 300px;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+ul.technique-gsap li {
+  margin: 5px 0;
 }
 /*styles section:02
 --------------------
@@ -594,7 +615,7 @@ section {
     background-position: -4800% 0;
   }
 }
-#marie2 {
+#marie-2 {
   position: absolute;
   top: 57vh;
   left: 70vw;
@@ -921,24 +942,41 @@ section {
     background-position: -4800% 0;
   }
 }
+#point_interrogation {
+  position: absolute;
+  z-index: 1;
+  width: 2.5vw;
+  top: 77.5vh;
+  left: 84.8vw;
+}
+#cercle {
+  position: absolute;
+  top: 65vh;
+  z-index: 1;
+  left: -5vw;
+}
 #cercle_01 {
   position: absolute;
   left: 88.5vw;
+  z-index: 1;
   top: 5vh;
 }
 #cercle_02 {
   position: absolute;
   left: 94.5vw;
+  z-index: 1;
   top: 8.5vh;
 }
 #cercle_03 {
   position: absolute;
   left: 88.3vw;
+  z-index: 1;
   top: 24vh;
 }
 #cercle_04 {
   position: absolute;
   left: 85.5vw;
+  z-index: 1;
   top: 8.5vh;
 }
 /*styles sections:08
@@ -980,25 +1018,25 @@ section {
     background-position: -4800% 0;
   }
 }
-#sang_13 {
+#sangs_13 {
   position: absolute;
   width: 12vw;
   left: 15vw;
   top: 80vh;
 }
-#sang_14 {
+#sangs_14 {
   position: absolute;
   width: 12vw;
   left: 15vw;
   top: 80vh;
 }
-#sang_15 {
+#sangs_15 {
   position: absolute;
   width: 12vw;
   left: 15vw;
   top: 80vh;
 }
-#sang_16 {
+#sangs_16 {
   position: absolute;
   width: 12vw;
   left: 15vw;
@@ -1189,14 +1227,21 @@ section {
 --------------------
 */
 #no11 {
-  background-size: 100vw 100vh;
+  background-color: rgb(107, 107, 107);
+  z-index: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 50% 50%;
 }
 .is-scrolling #no11 .monstre-03 {
   animation-play-state: running;
 }
 #monstre4 {
   position: absolute;
-  width: 15vw;
+  top: 42.5vh;
+  left: 42.3vw;
+  width: 6vw;
   aspect-ratio: 1/1;
   background-image: url(../img/img_personnages/monstre.png);
   background-size: 4800% 100%;
@@ -1222,7 +1267,9 @@ section {
 }
 #marie3 {
   position: absolute;
-  width: 15vw;
+  top: 41.5vh;
+  left: 45.3vw;
+  width: 7vw;
   aspect-ratio: 1/1;
   background-image: url(../img/img_personnages/marie.png);
   background-size: 2700% 100%;
@@ -1245,7 +1292,9 @@ section {
 }
 #monstre5 {
   position: absolute;
-  width: 15vw;
+  top: 42.5vh;
+  left: 42.3vw;
+  width: 6vw;
   aspect-ratio: 1/1;
   background-image: url(../img/img_personnages/monstre.png);
   background-size: 4800% 100%;
@@ -1268,54 +1317,65 @@ section {
 }
 #mur_gauche {
   position: absolute;
-  left: 50px;
+  left: -8vw;
+  height: 100vh;
 }
 #mur_droit {
   position: absolute;
-  left: 300px;
+  left: 68vw;
+  height: 100vh;
 }
 #escalier {
   position: absolute;
-  left: 50px;
-  width: 2.9vw;
+  left: 32vw;
+  top: 92.5vh;
+  width: 35vw;
 }
 #escalier_02 {
   position: absolute;
-  left: 50px;
-  width: 2.9vw;
+  left: 34.5vw;
+  top: 85vh;
+  width: 30vw;
 }
 #escalier_03 {
   position: absolute;
-  left: 50px;
-  width: 2.9vw;
+  left: 36.8vw;
+  top: 77vh;
+  width: 25vw;
 }
 #escalier_04 {
   position: absolute;
-  left: 50px;
-  width: 2.9vw;
+  left: 39.3vw;
+  top: 71.3vh;
+  width: 20vw;
 }
 #escalier_05 {
   position: absolute;
-  left: 50px;
-  width: 2.9vw;
+  left: 41.7vw;
+  top: 66.8vh;
+  width: 15vw;
 }
 #escalier_06 {
   position: absolute;
-  left: 50px;
-  width: 2.9vw;
+  left: 43vw;
+  top: 63vh;
+  width: 12.5vw;
 }
 #escalier_07 {
   position: absolute;
-  left: 50px;
-  width: 2.9vw;
+  left: 44.3vw;
+  top: 60vh;
+  width: 10vw;
 }
 #escalier_08 {
   position: absolute;
-  left: 50px;
-  width: 2.9vw;
+  left: 45.5vw;
+  top: 57.8vh;
+  width: 7.5vw;
 }
 #escalier_09 {
   position: absolute;
-  left: 50px;
-  width: 2.9vw;
+  left: 46.6vw;
+  top: 56vh;
+  width: 5vw;
 }

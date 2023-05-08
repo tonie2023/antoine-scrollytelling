@@ -36,8 +36,8 @@ gsap
 
 /*----Animations chapitre 3-----*/
 let no3 = document.querySelector("#no3");
-let audio2 = new Audio("./sons/door.wav");
-let audio4 = new Audio("./sons/indoor_rain.wav");
+let audio2 = new Audio("../sons/door.wav");
+let audio4 = new Audio("../sons/indoor_rain.wav");
 
 let chapitreTrois = document.querySelector("#no3");
 chapitreTrois.addEventListener("pointerenter", function () {
@@ -501,7 +501,7 @@ gsap
     skewY: "8deg",
   });
 
-let audio = new Audio("./sons/darkness_tension.mp3");
+let audio = new Audio("../sons/darkness_tension.mp3");
 let header = document.querySelector("#no1");
 header.addEventListener("pointerenter", function () {
   audio.play();
@@ -597,8 +597,8 @@ texteCinq.from(".texte-5", {
 ----------------------
 */
 
-let audio1 = new Audio("./sons/rustling_leaves.mp3");
-let audio3 = new Audio("./sons/wind.wav");
+let audio1 = new Audio("../sons/rustling_leaves.mp3");
+let audio3 = new Audio("../sons/wind.wav");
 let vegetal = document.querySelector("#no2");
 
 vegetal.addEventListener("pointerenter", function () {

@@ -1135,6 +1135,24 @@ let anim = gsap.timeline({}).to(".bi-file-arrow-down", {
   repeat: -1,
 });
 
+/*------------
+Section 13
+--------------*/
+
+gsap.registerPlugin(MotionPathPlugin);
+gsap.from("#rect1", {
+  duration: 5,
+  repeat: 12,
+  repeatDelay: 3,
+  ease: "power1.inOut",
+  motionPath: {
+    path: "#cerl",
+    align: "#cerl",
+    autoRotate: true,
+    alignOrigin: [0.5, 0.5],
+  },
+});
+
 /*Javascript textes:
 -----------------------------
 -----------------------------

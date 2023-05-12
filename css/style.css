@@ -1293,3 +1293,21 @@ ul.technique-gsap li {
   text-shadow: 0 0 1rem red, 0 0 1rem red, 0 0 1.5rem red, 0 0 2.5rem red,
     0 0 4rem white, 0 0 5.5rem white, 0 0 6rem white, 0 0 9.5rem white;
 }
+/*-------------
+Style sections: 13
+-----------------
+*/
+#no13 {
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+#cirl {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  z-index: 0;
+}
+#cercle {
+  z-index: 1;
+}

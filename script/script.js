@@ -1,6 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
-gsap.registerPlugin(TextPlugin);
+gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
 
 /*----Animations chapitre 2-----*/
 let no2 = document.querySelector("#no2");
@@ -17,7 +18,7 @@ gsap
       toggleActions: "restart complete reverse reset",
     },
   })
-  .to("#julia", {
+  .to("#julia", 12, {
     duration: "4",
     scale: "0.250",
     x: "600",
@@ -25,6 +26,7 @@ gsap
   })
   .to(
     "#marie",
+    12,
     {
       duration: "4",
       scale: "0.250",
@@ -42,10 +44,10 @@ let audio4 = new Audio("sons/indoor_rain.wav");
 let chapitreTrois = document.querySelector("#no3");
 chapitreTrois.addEventListener("pointerenter", function () {
   audio2.play();
-  audio2.volume = 0.3;
+  audio2.volume = 0.4;
   audio2.currentTime = 0;
   audio4.play();
-  audio4.volume = 0.2;
+  audio4.volume = 0.1;
   audio4.currentTime = 0;
 });
 chapitreTrois.addEventListener("pointerleave", function () {
@@ -58,6 +60,85 @@ chapitreTrois.addEventListener("pointerleave", function () {
 gsap
   .timeline({
     scrollTrigger: {
+      markers: true,
+      start: "50% 50%",
+      end: "50% top",
+      toggleActions: "restart complete reverse reset",
+      trigger: "#no3",
+    },
+  })
+  .from(".texte-3", {
+    x: "-140",
+    scale: "0.1",
+    ease: "none",
+    delay: 2,
+    opacity: 0,
+    duration: "3",
+  })
+  .to(".texte-3", {
+    x: "-140",
+    scale: "0.1",
+    ease: "none",
+    delay: 3,
+    opacity: 0,
+    duration: "4",
+  });
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      markers: true,
+      start: "50% 50%",
+      end: "50% top",
+      toggleActions: "restart complete reverse reset",
+      trigger: "#no3",
+    },
+  })
+  .from(".texte-4", {
+    x: "-345",
+    scale: "0.1",
+    ease: "none",
+    delay: 3,
+    opacity: 0,
+    duration: "3",
+  })
+  .to(".texte-4", {
+    x: "-345",
+    scale: "0.1",
+    ease: "none",
+    delay: 4,
+    opacity: 0,
+    duration: "4",
+  });
+gsap
+  .timeline({
+    scrollTrigger: {
+      markers: true,
+      start: "50% 50%",
+      end: "50% top",
+      toggleActions: "restart complete reverse reset",
+      trigger: "#no3",
+    },
+  })
+  .from(".texte-5", {
+    x: "-260",
+    scale: "0.1",
+    ease: "none",
+    delay: 4,
+    opacity: 0,
+    duration: "3",
+  })
+  .to(".texte-5", {
+    y: "-52",
+    ease: "none",
+    delay: 5,
+    opacity: 1,
+    duration: "2.5",
+  });
+
+gsap
+  .timeline({
+    scrollTrigger: {
       trigger: "#no3",
       markers: true,
       pin: true,
@@ -66,14 +147,6 @@ gsap
       scrub: true,
       toggleActions: "restart complete reverse reset",
     },
-  })
-  .from(".texte-3", {
-    x: "-135",
-    scale: "0.1",
-    delay: 2,
-    opacity: 0,
-    ease: "none",
-    duration: "3",
   })
   .to("#monstre", 2, {
     opacity: 1,
@@ -109,6 +182,19 @@ gsap
 /*----Animations chapitre 4-----*/
 let no4 = document.querySelector("#no4");
 
+let audio6 = new Audio("sons/indoor_rain.wav");
+
+let sectionQuatre = document.querySelector("#no4");
+sectionQuatre.addEventListener("pointerenter", function () {
+  audio6.play();
+  audio6.volume = 0.06;
+  audio6.currentTime = 0;
+});
+sectionQuatre.addEventListener("pointerleave", function () {
+  audio6.pause();
+  audio6.volume = 0;
+});
+
 gsap
   .timeline({
     scrollTrigger: {
@@ -121,77 +207,77 @@ gsap
       toggleActions: "restart complete reverse reset",
     },
   })
-  .to("#julia2", {
+  .to("#julia2", 20, {
     scale: "1",
   })
-  .to("#julia2", {
-    duration: "4",
+  .to("#julia2", 20, {
+    duration: "8",
     scale: "0.650",
     y: "-125",
   })
-  .to("#julia2", {
-    duration: "4",
+  .to("#julia2", 20, {
+    duration: "8",
     scale: "0.650",
     y: "-125",
     x: "240",
   })
-  .to("#julia2", {
-    duration: "4",
+  .to("#julia2", 20, {
+    duration: "8",
     y: "25",
     x: "240",
     scaleX: -1,
     scaleY: 1,
   })
-  .to("#julia2", {
-    duration: "4",
+  .to("#julia2", 20, {
+    duration: "8",
     y: "25",
     x: "-1000",
     scaleX: -1,
     scaleY: 1,
   })
-  .to("#julia2", {
-    duration: "4",
+  .to("#julia2", 20, {
+    duration: "8",
     y: "25",
     x: "-1000",
     scaleX: 1,
     scaleY: 1,
   })
-  .to("#marie-2", {
+  .to("#marie-2", 20, {
     x: "-400",
-    duration: "4",
+    duration: "8",
   })
-  .to("#marie-2", {
+  .to("#marie-2", 20, {
     x: "-420",
     y: "20",
-    duration: "4",
+    duration: "8",
     scaleX: -1,
     scaleY: -1,
   })
-  .to("#marie-2", {
+  .to("#marie-2", 20, {
     x: "-90",
     y: "-120",
-    duration: "4",
+    duration: "8",
     scaleX: -0.5,
     scaleY: -0.5,
   })
-  .to("#marie-2", {
+  .to("#marie-2", 20, {
     x: "-100",
     y: "-270",
-    duration: "15",
+    duration: "8",
     scaleX: 0.5,
     scaleY: -0.5,
   })
-  .to("#marie-2", {
+  .to("#marie-2", 20, {
     x: "-80",
     y: "20",
-    duration: "4",
+    duration: "8",
     scaleX: 1,
     scaleY: -1,
   })
-  .to("#marie-2", {
+  .to("#marie-2", 20, {
     x: "-400",
     y: "20",
-    duration: "4",
+    duration: "8",
     scaleX: 1,
     scaleY: -1,
   });
@@ -199,20 +285,165 @@ gsap
 /*----Animations chapitre 5-----*/
 let no5 = document.querySelector("#no5");
 
-gsap.to("#no5", {
+let audio7 = new Audio("sons/indoor_rain.wav");
+
+let sectionCinq = document.querySelector("#no5");
+sectionQuatre.addEventListener("pointerenter", function () {
+  audio7.play();
+  audio7.volume = 0.04;
+  audio7.currentTime = 0;
+});
+sectionCinq.addEventListener("pointerleave", function () {
+  audio7.pause();
+  audio7.volume = 0;
+});
+
+gsap.timeline("#no5", {
   scrollTrigger: {
     trigger: "#no5",
     markers: true,
     pin: true,
+    pinSpacing: false,
     start: "50% 50%",
     end: "50% top",
     scrub: true,
     toggleActions: "restart complete reverse reset",
   },
+  ease: "slow.inOut",
 });
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#no5",
+      markers: true,
+      pin: true,
+      start: "50% 50%",
+      end: "50% top",
+      scrub: true,
+      toggleActions: "restart complete reverse reset",
+    },
+  })
+  .from("#julia3", 20, {
+    opacity: 0,
+    duration: 3,
+  })
+  .to("#julia3", 20, {
+    opacity: 1,
+    y: "40",
+    duration: 6,
+  })
+  .to("#julia3", 20, {
+    x: "-150",
+    duration: 6,
+  })
+  .to("#julia3", 20, {
+    x: "0",
+    scaleX: "-1",
+    scaleY: "-1",
+    duration: 6,
+  })
+  .to("#julia3", 20, {
+    y: "90",
+    width: "120",
+    scaleX: "1",
+    scaleY: "-1",
+    duration: 6,
+  })
+  .to("#julia3", 20, {
+    x: "-270",
+    duration: 6,
+  })
+  .to("#julia3", 20, {
+    x: "0",
+    scaleX: "-1",
+    scaleY: "-1",
+    duration: 6,
+  })
+  .to("#julia3", 20, {
+    y: "180",
+    width: "160",
+    scaleX: "1",
+    scaleY: "-1",
+    duration: 6,
+  })
+  .to(".btn", {
+    opacity: 1,
+  })
+  .to("#julia3", 20, {
+    x: "-470",
+    duration: 6,
+  })
+  .to("#julia3", 20, {
+    x: "0",
+    scaleX: "-1",
+    scaleY: "-1",
+    duration: 6,
+  })
+  .to("#julia3", 20, {
+    y: "250",
+    x: "-100",
+    width: "350",
+    scaleX: "1",
+    scaleY: "-1",
+    duration: 6,
+  })
+  .to("#julia3", 20, {
+    x: "-700",
+    duration: 6,
+  });
+
+gsap.set(["#fleche"], { drawSVG: "0% 0%" });
+
+function animate() {
+  gsap
+    .timeline()
+    .fromTo(
+      "#fleche",
+      {
+        drawSVG: "0% 0%",
+      },
+      {
+        drawSVG: "0% 100%",
+        duration: 5,
+      }
+    )
+    .fromTo(
+      "#fleche",
+      {
+        fillOpacity: 0,
+      },
+      {
+        fillOpacity: 1,
+        duration: 2,
+      }
+    )
+    .to("#direction", {
+      x: "2.5vmin",
+      yoyo: true,
+      ease: "none",
+      repeat: -1,
+    });
+}
+
+const btn = document.querySelector("#go");
+btn.addEventListener("click", animate);
 
 /*----Animations chapitre 6-----*/
 let no6 = document.querySelector("#no6");
+
+let audio8 = new Audio("sons/indoor_rain.wav");
+
+let sectionSix = document.querySelector("#no6");
+sectionSix.addEventListener("pointerenter", function () {
+  audio8.play();
+  audio8.volume = 0.07;
+  audio8.currentTime = 0;
+});
+sectionSix.addEventListener("pointerleave", function () {
+  audio8.pause();
+  audio8.volume = 0;
+});
 
 gsap
   .timeline({
@@ -332,10 +563,24 @@ gsap
 /*----Animations chapitre 7-----*/
 let no7 = document.querySelector("#no7");
 
-gsap.to("#no7", {
+let audio9 = new Audio("sons/indoor_rain.wav");
+
+let sectionSept = document.querySelector("#no7");
+sectionSept.addEventListener("pointerenter", function () {
+  audio9.play();
+  audio9.volume = 0.04;
+  audio9.currentTime = 0;
+});
+sectionSept.addEventListener("pointerleave", function () {
+  audio9.pause();
+  audio9.volume = 0;
+});
+
+gsap.timeline("#no7", {
   scrollTrigger: {
     trigger: "#no7",
     markers: true,
+    pinSpacing: false,
     pin: true,
     start: "50% 50%",
     end: "50% top",
@@ -344,8 +589,95 @@ gsap.to("#no7", {
   },
 });
 
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#no7",
+      markers: true,
+      pin: true,
+      start: "50% 50%",
+      end: "50% top",
+      scrub: true,
+      toggleActions: "restart complete reverse reset",
+    },
+  })
+  .from("#julia5", {
+    x: "-700",
+    scaleX: "-1",
+    scaleY: "-1",
+    duration: 6,
+    width: "350",
+  })
+  .to("#julia5", {
+    y: "-50",
+    x: "140",
+    duration: 6,
+    width: "160",
+  })
+  .to("#julia5", {
+    y: "-50",
+    x: "140",
+    duration: 6,
+    width: "160",
+  })
+  .to("#julia5", {
+    y: "-145",
+    x: "170",
+    duration: 6,
+    width: "120",
+  });
+
+gsap.set(["#arrow"], { drawSVG: "0% 0%" });
+
+function animate2() {
+  gsap
+    .timeline()
+    .fromTo(
+      "#arrow",
+      {
+        drawSVG: "0% 0%",
+      },
+      {
+        drawSVG: "0% 100%",
+        duration: 5,
+      }
+    )
+    .fromTo(
+      "#arrow",
+      {
+        fillOpacity: 0,
+      },
+      {
+        fillOpacity: 1,
+        duration: 2,
+      }
+    )
+    .to("#direction-2", {
+      x: "1.5vmin",
+      yoyo: true,
+      ease: "none",
+      repeat: -1,
+    });
+}
+
+const btn2 = document.querySelector("#go2");
+btn2.addEventListener("click", animate2);
+
 /*----Animations chapitre 8-----*/
 let no8 = document.querySelector("#no8");
+
+let audio10 = new Audio("sons/indoor_rain.wav");
+
+let sectionHuit = document.querySelector("#no8");
+sectionHuit.addEventListener("pointerenter", function () {
+  audio10.play();
+  audio10.volume = 0.07;
+  audio10.currentTime = 0;
+});
+sectionHuit.addEventListener("pointerleave", function () {
+  audio10.pause();
+  audio10.volume = 0;
+});
 
 gsap.to("#no8", {
   scrollTrigger: {
@@ -362,6 +694,19 @@ gsap.to("#no8", {
 /*----Animations chapitre 9-----*/
 let no9 = document.querySelector("#no9");
 
+let audio11 = new Audio("sons/indoor_rain.wav");
+
+let sectionNeuf = document.querySelector("#no9");
+sectionNeuf.addEventListener("pointerenter", function () {
+  audio11.play();
+  audio11.volume = 0.04;
+  audio11.currentTime = 0;
+});
+sectionNeuf.addEventListener("pointerleave", function () {
+  audio11.pause();
+  audio11.volume = 0;
+});
+
 gsap.to("#no9", {
   scrollTrigger: {
     trigger: "#no9",
@@ -374,8 +719,39 @@ gsap.to("#no9", {
   },
 });
 
+gsap
+  .timeline({
+    scrollTrigger: {
+      markers: true,
+      start: "50% 50%",
+      end: "50% top",
+      toggleActions: "restart complete reverse reset",
+      trigger: "#no9",
+    },
+  })
+  .to("#julia7", {
+    scale: "0.1",
+    x: "520",
+    y: "-400",
+    opacity: 0,
+    duration: 4.5,
+  });
+
 /*----Animations chapitre 10-----*/
 let no10 = document.querySelector("#no10");
+
+let audio12 = new Audio("sons/indoor_rain.wav");
+
+let sectionDix = document.querySelector("#no10");
+sectionDix.addEventListener("pointerenter", function () {
+  audio12.play();
+  audio12.volume = 0.1;
+  audio12.currentTime = 0;
+});
+sectionDix.addEventListener("pointerleave", function () {
+  audio12.pause();
+  audio12.volume = 0;
+});
 
 gsap.to("#no10", {
   scrollTrigger: {
@@ -393,6 +769,9 @@ gsap.to("#no10", {
 let no11 = document.querySelector("#no11");
 let murGauche = document.querySelector("#mur_gauche");
 let murDroit = document.querySelector("#mur_droit");
+
+let largeurTotale = document.body.scrollWidth;
+let hauteurTotale = document.body.scrollHeight;
 
 gsap.to("#no11", {
   scrollTrigger: {
@@ -429,6 +808,7 @@ gsap
         end: "50% top",
         scrub: true,
       },
+      x: largeurTotale * -0.7,
     },
     "1"
   )
@@ -443,63 +823,174 @@ gsap
         end: "50% top",
         scrub: true,
       },
+      x: largeurTotale * -0.7,
     },
-    "<"
+    "+="
   )
   .from("#escalier", {
+    scrollTrigger: {
+      scrub: true,
+      trigger: "#no11",
+      start: "50% 50%",
+      end: "50% top",
+    },
+    y: hauteurTotale * -0.15,
+    ease: "none",
+    delay: 10,
     x: "-2000",
-    y: "-2000",
     rotation: -75,
     skewY: "8deg",
   })
   .from("#escalier_02", {
+    scrollTrigger: {
+      scrub: true,
+      trigger: "#no11",
+      start: "50% 50%",
+      end: "50% top",
+    },
+    delay: 10,
+    y: hauteurTotale * -0.15,
     x: "2000",
-    y: "-2000",
     rotation: 75,
     skewY: "-8deg",
   })
   .from("#escalier_03", {
+    scrollTrigger: {
+      scrub: true,
+      trigger: "#no11",
+      start: "50% 50%",
+      end: "50% top",
+    },
+    delay: 10,
+    y: hauteurTotale * -0.15,
     x: "-2000",
-    y: "-2000",
     rotation: -75,
     skewY: "8deg",
   })
   .from("#escalier_04", {
+    scrollTrigger: {
+      scrub: true,
+      trigger: "#no11",
+      start: "50% 50%",
+      end: "50% top",
+    },
+    delay: 10,
+    y: hauteurTotale * -0.15,
     x: "2000",
-    y: "-2000",
     rotation: 75,
     skewY: "-8deg",
   })
   .from("#escalier_05", {
+    scrollTrigger: {
+      scrub: true,
+      trigger: "#no11",
+      start: "50% 50%",
+      end: "50% top",
+    },
+    delay: 10,
+    y: hauteurTotale * -0.15,
     x: "-2000",
-    y: "-2000",
     rotation: -75,
     skewY: "8deg",
   })
   .from("#escalier_06", {
+    scrollTrigger: {
+      scrub: true,
+      trigger: "#no11",
+      start: "50% 50%",
+      end: "50% top",
+    },
+    delay: 10,
+    y: hauteurTotale * -0.15,
     x: "2000",
-    y: "-2000",
     rotation: 75,
     skewY: "-8deg",
   })
   .from("#escalier_07", {
+    scrollTrigger: {
+      scrub: true,
+      trigger: "#no11",
+      start: "50% 50%",
+      end: "50% top",
+    },
+    delay: 10,
+    y: hauteurTotale * -0.15,
     x: "-2000",
-    y: "-2000",
     rotation: -75,
     skewY: "8deg",
   })
   .from("#escalier_08", {
+    scrollTrigger: {
+      scrub: true,
+      trigger: "#no11",
+      start: "50% 50%",
+      end: "50% top",
+    },
+    delay: 10,
+    y: hauteurTotale * -0.15,
     x: "2000",
-    y: "-2000",
     rotation: 75,
     skewY: "-8deg",
   })
   .from("#escalier_09", {
+    scrollTrigger: {
+      scrub: true,
+      trigger: "#no11",
+      start: "50% 50%",
+      end: "50% top",
+    },
+    delay: 10,
+    y: hauteurTotale * -0.15,
     x: "-2000",
-    y: "-2000",
     rotation: -75,
     skewY: "8deg",
+  })
+  .from("#marie3", {
+    scrollTrigger: {
+      scrub: true,
+      pinSpacing: false,
+      trigger: "#no11",
+      start: "50% 50%",
+      end: "50% top",
+    },
+    opacity: 0,
+    delay: 10,
+    x: largeurTotale * -0.05,
+    scale: "0.3",
+  })
+  .from("#monstre4", {
+    scrollTrigger: {
+      scrub: true,
+      pinSpacing: false,
+      trigger: "#no11",
+      start: "50% 50%",
+      end: "50% top",
+    },
+    opacity: 0,
+    delay: 10,
+    x: largeurTotale * -0.05,
+    scale: "0.3",
   });
+
+gsap.from(".texte-15", {
+  y: "-1000",
+  ease: "bounce.inOut",
+  opacity: 0,
+  delay: 1,
+  duration: 4,
+});
+
+let audio5 = new Audio("sons/darkness_tension.mp3");
+let audioNo12 = document.querySelector("#no12");
+audioNo12.addEventListener("pointerenter", function () {
+  audio5.play();
+  audio5.volume = 1;
+  audio5.currentTime = 0;
+});
+audioNo12.addEventListener("pointerleave", function () {
+  audio5.pause();
+  audio5.volume = 0;
+});
 
 let audio = new Audio("sons/darkness_tension.mp3");
 let header = document.querySelector("#no1");
@@ -535,11 +1026,19 @@ let anim = gsap.timeline({}).to(".bi-file-arrow-down", {
 -----------------------------
 -----------------------------
 */
-const texteUn = gsap.timeline();
-
-texteUn
+const texteUn = gsap
+  .timeline({
+    scrollTrigger: {
+      markers: true,
+      start: "50% 50%",
+      end: "50% top",
+      toggleActions: "restart complete reverse reset",
+      trigger: "#no2",
+    },
+    repeat: -1,
+  })
   .from(".texte-1", 1.8, {
-    x: -970,
+    x: "-970",
     ease: "bounce.out",
     delay: 1,
     stagger: {
@@ -548,16 +1047,27 @@ texteUn
   })
   .to(
     ".texte-1",
+    0.75,
     {
+      x: "-970",
       opacity: 0,
+      ease: "none",
     },
-    6
+    8.5
   );
-const texteDeux = gsap.timeline();
-
-texteDeux
+const texteDeux = gsap
+  .timeline({
+    scrollTrigger: {
+      markers: true,
+      start: "50% 50%",
+      end: "50% top",
+      toggleActions: "restart complete reverse reset",
+      trigger: "#no2",
+    },
+    repeat: -1,
+  })
   .from(".texte-2", 1.8, {
-    x: -1500,
+    x: "-1500",
     ease: "bounce.out",
     delay: 3,
     stagger: {
@@ -566,32 +1076,15 @@ texteDeux
   })
   .to(
     ".texte-2",
+    0.75,
     {
+      x: "1500",
       opacity: 0,
+      ease: "none",
     },
-    7
+    8.5
   );
 
-const texteQuatre = gsap.timeline();
-
-texteQuatre.from(".texte-4", {
-  x: "-345",
-  scale: "0.1",
-  ease: "none",
-  delay: 5,
-  opacity: 0,
-  duration: "3",
-});
-const texteCinq = gsap.timeline();
-
-texteCinq.from(".texte-5", {
-  x: "-260",
-  scale: "0.1",
-  ease: "none",
-  delay: 8,
-  opacity: 0,
-  duration: "3",
-});
 /*Javascript feuilles:
 ----------------------
 ----------------------

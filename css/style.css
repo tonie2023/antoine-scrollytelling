@@ -996,6 +996,13 @@ ul.technique-gsap li {
 .is-scrolling #no8 .fille-06 {
   animation-play-state: running;
 }
+#point_interrogation_02 {
+  position: absolute;
+  z-index: 1;
+  width: 2.5vw;
+  top: 12vh;
+  left: 90vw;
+}
 #cercle_05 {
   position: absolute;
   left: 88.5vw;

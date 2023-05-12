@@ -690,7 +690,120 @@ gsap.to("#no8", {
     toggleActions: "restart complete reverse reset",
   },
 });
-
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#no8",
+      markers: true,
+      pinSpacing: true,
+      start: "50% 50%",
+      end: "50% top",
+      toggleActions: "restart complete reverse reset",
+    },
+    repeat: -1,
+  })
+  .from("#cercle_05", {
+    x: "-700",
+    y: "700",
+    opacity: 0,
+    rotation: 150,
+    duration: "2",
+    skewX: "5deg",
+    skewY: "100deg",
+  })
+  .from(
+    "#cercle_06",
+    {
+      x: "700",
+      y: "-700",
+      opacity: 0,
+      rotation: 150,
+      duration: "2.5",
+      skewX: "5deg",
+      skewY: "100deg",
+    },
+    2
+  )
+  .from(
+    "#cercle_07",
+    {
+      x: "-700",
+      y: "-700",
+      opacity: 0,
+      rotation: 150,
+      duration: "3.5",
+      skewX: "5deg",
+      skewY: "100deg",
+    },
+    3
+  )
+  .from(
+    "#cercle_08",
+    {
+      x: "-1300",
+      y: "300",
+      opacity: 0,
+      rotation: 150,
+      duration: "4.5",
+      skewX: "5deg",
+      skewY: "100deg",
+    },
+    4
+  )
+  .from("#point_interrogation_02", {
+    scaleX: 1,
+    x: "1300",
+    y: "300",
+    duration: 2,
+    opacity: 1,
+    rotation: 150,
+    skewX: "5deg",
+    skewY: "100deg",
+  })
+  .from("#point_interrogation_02", {
+    scaleX: -1,
+  })
+  .from("#point_interrogation_02", {
+    scaleX: 1,
+  })
+  .from("#point_interrogation_02", {
+    scaleX: -1,
+  })
+  .from("#point_interrogation_02", {
+    scaleX: 1,
+  })
+  .from("#point_interrogation_02", {
+    scaleX: -1,
+  })
+  .to("#point_interrogation_02", {
+    scaleX: 1,
+    opacity: 0,
+    duration: 1,
+  })
+  .to("#cercle_00", {
+    opacity: 0,
+    duration: 2,
+  })
+  .to("#cercle_00", {
+    opacity: 1,
+    duration: 2,
+  })
+  .to("#cercle_00", {
+    opacity: 0,
+    duration: 2,
+  })
+  .to("#cercle_00", {
+    opacity: 1,
+    duration: 2,
+  })
+  .to("#cercle_00", {
+    opacity: 0,
+    duration: 2,
+  })
+  .to("#cercle_00", {
+    opacity: 1,
+    duration: 2,
+  });
 /*----Animations chapitre 9-----*/
 let no9 = document.querySelector("#no9");
 
